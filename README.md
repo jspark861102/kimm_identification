@@ -5,6 +5,7 @@ Object parameter identification simulator with experimental data
 ```bash
 git clone https://github.com/jspark861102/kimm_object_estimation.git
 git clone https://github.com/jspark861102/kimm_phri_msgs.git
+git clone https://github.com/jspark861102/kimm_mujoco_ros.git -b melodic
 git clone https://github.com/jspark861102/kimm_identification.git
 ```
 
