@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>kimm_identification</name>
+  <version>0.0.1</version>
+  <description>The kimm object parameter identification simulation package</description>
+
+  <maintainer email="jspark2090@kimm.re.kr">Jinseong Park</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>eigen</build_depend>
+
+  <depend>controller_interface</depend>
+  <depend>dynamic_reconfigure</depend>  
+  <depend>geometry_msgs</depend>    
+  <depend>roscpp</depend>    
+  
+  <exec_depend>message_runtime</exec_depend>  
+  <exec_depend>rospy</exec_depend>
+  <depend>kimm_object_estimation</depend>
+  <depend>tf</depend>  
+</package>

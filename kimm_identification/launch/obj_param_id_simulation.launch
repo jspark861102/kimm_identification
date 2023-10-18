@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<launch>  
+  <!-- main -->
+  <node name="kimm_identification_simulation" pkg="kimm_identification" args="-keyboard" type="kimm_identification_simulation" output="screen">
+      </node>    
+
+  <!-- data -->
+  <arg name="path" default="/home/kimm/kimm_catkin_id/src/data/" />
+  <arg name="file" default="data1" />
+  <!-- <node pkg="rosbag" type="play" name="player" output="screen" required="true" args="$(arg path)$(arg file).bag"/> -->
+  <node pkg="rosbag" type="play" name="player" required="true" args="$(arg path)$(arg file).bag"/>
+
+  <!-- rqt -->
+  <node name="rqt" pkg="rqt_gui" type="rqt_gui" args="--perspective-file $(find kimm_identification)/rqt/kimm_identification.perspective" output="screen"/>
+</launch>
