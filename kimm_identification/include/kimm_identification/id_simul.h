@@ -21,8 +21,8 @@
 #include <tf/transform_listener.h>
 
 // Object estimation
-#include <../../kimm_object_estimation/include/kimm_object_estimation/main/extendedkalman.hpp>
-#include <../../kimm_object_estimation/include/kimm_object_estimation/objdyn/object_dynamics.hpp>
+#include <../../../kimm_object_estimation/include/kimm_object_estimation/main/extendedkalman.hpp>
+#include <../../../kimm_object_estimation/include/kimm_object_estimation/objdyn/object_dynamics.hpp>
 #include <kimm_identification/ekf_paramConfig.h>
 
 ros::Publisher object_parameter_pub_;
